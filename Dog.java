@@ -1,6 +1,6 @@
 public class Dog extends Animal implements Land {
 
-    private int numberOfLegs;
+    private int numberOfLegs = 4;
     
     public Dog(int mo) {
         super(true, true, mo);
@@ -16,7 +16,7 @@ public class Dog extends Animal implements Land {
         if (mo == MOOD_HAPPY){
             System.out.println("bark loudly");
         }
-        if (mo == MOOD_SCARE){
+        else if (mo == MOOD_SCARE){
             System.out.println("whooping");
         }
     }
