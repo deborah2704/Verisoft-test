@@ -1,6 +1,6 @@
 public class Frog extends Animal implements Land, Water{
 
-    private int numberOfLegs;
+    private int numberOfLegs = 4;
 
     public Frog(int mo) {
         super(false, false, mo);
@@ -17,7 +17,7 @@ public class Frog extends Animal implements Land, Water{
         if (mo == MOOD_HAPPY){
             System.out.println("quack quack quack");
         }
-        if (mo == MOOD_SCARE){
+        else if (mo == MOOD_SCARE){
             System.out.println("plop into the water");
         }
     }
